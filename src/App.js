@@ -1,16 +1,16 @@
 import './App.css';
 import React,{ Component } from "react";
 
-import Icosahedron from './Icosahedron';
 
 
+import Shader from './Shader';
 class App extends Component {
  
     render() {
         return (
-            <div style={{display:"grid"}}>
+            <div >
          
-            <Icosahedron />
+            <Shader />
             </div>
         )
     }
