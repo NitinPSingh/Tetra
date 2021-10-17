@@ -1,7 +1,7 @@
 import React,{ Component } from "react";
 import * as THREE from "three";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
-import vertexShader from "./vertex.glsl";
+
 import {  GUI } from 'three/examples/jsm/libs/dat.gui.module';
 import India from "./India.jpg"
 
@@ -11,7 +11,7 @@ export default class Shader extends Component {
     componentDidMount() {
         var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-console.log(vertexShader)
+
 //Creates renderer and adds it to the DOM
 
 var renderer = new THREE.WebGLRenderer();
